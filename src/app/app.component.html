@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Il y a {{festivals.length}} festivals
+</p>
+<li>
+  <ul *ngFor="let f of festivals">{{f.name}} : {{f.tables}}</ul>
+</li>
+
+<button (click)="add()">Ajouter </button>
+<button (click)="update()">Modifier </button>
+<br>
+<label>Name</label>
+<input type="text">
+<label>Tables</label>
+<input type="text">
+<p>
+  Il y a eu {{modif}} modifications
+</p>
